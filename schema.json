@@ -4,7 +4,17 @@
   "title": "Brand Guide",
   "description": "Machine-readable brand identity context for AI agents and design tooling.",
   "type": "object",
-  "required": ["brand", "website", "category", "last_updated", "positioning", "markets", "colors", "typography", "voice"],
+  "required": [
+    "brand",
+    "website",
+    "category",
+    "last_updated",
+    "positioning",
+    "markets",
+    "colors",
+    "typography",
+    "voice"
+  ],
   "additionalProperties": false,
   "properties": {
     "brand": {
@@ -49,10 +59,22 @@
       "description": "Brand positioning — structured components and final statement",
       "required": ["statement"],
       "properties": {
-        "statement": { "type": "string", "description": "Final one or two sentence positioning statement" },
-        "for": { "type": "string", "description": "Target audience (e.g. 'small law firms in the Southeast')" },
-        "category": { "type": "string", "description": "Category the brand competes in" },
-        "benefit": { "type": "string", "description": "Primary benefit or value delivered" }
+        "statement": {
+          "type": "string",
+          "description": "Final one or two sentence positioning statement"
+        },
+        "for": {
+          "type": "string",
+          "description": "Target audience (e.g. 'small law firms in the Southeast')"
+        },
+        "category": {
+          "type": "string",
+          "description": "Category the brand competes in"
+        },
+        "benefit": {
+          "type": "string",
+          "description": "Primary benefit or value delivered"
+        }
       },
       "additionalProperties": false
     },
@@ -71,7 +93,10 @@
       "description": "Who the brand is speaking to — for copy and content agents",
       "required": ["primary"],
       "properties": {
-        "primary": { "type": "string", "description": "One sentence: who the ideal customer is" },
+        "primary": {
+          "type": "string",
+          "description": "One sentence: who the ideal customer is"
+        },
         "pain_points": {
           "type": "array",
           "items": { "type": "string" },
@@ -109,7 +134,10 @@
           "type": "object",
           "required": ["hex"],
           "properties": {
-            "hex": { "type": "string", "pattern": "^#([0-9A-Fa-f]{3,4}|[0-9A-Fa-f]{6}|[0-9A-Fa-f]{8})$" },
+            "hex": {
+              "type": "string",
+              "pattern": "^#([0-9A-Fa-f]{3,4}|[0-9A-Fa-f]{6}|[0-9A-Fa-f]{8})$"
+            },
             "usage": { "type": "string" }
           },
           "additionalProperties": false
@@ -118,7 +146,10 @@
           "type": "object",
           "required": ["hex"],
           "properties": {
-            "hex": { "type": "string", "pattern": "^#([0-9A-Fa-f]{3,4}|[0-9A-Fa-f]{6}|[0-9A-Fa-f]{8})$" },
+            "hex": {
+              "type": "string",
+              "pattern": "^#([0-9A-Fa-f]{3,4}|[0-9A-Fa-f]{6}|[0-9A-Fa-f]{8})$"
+            },
             "usage": { "type": "string" }
           },
           "additionalProperties": false
@@ -148,8 +179,14 @@
         "type": "object",
         "required": ["text", "bg"],
         "properties": {
-          "text": { "type": "string", "description": "Color role name from `colors` (e.g. 'primary', 'background')" },
-          "bg": { "type": "string", "description": "Color role name from `colors` (e.g. 'primary', 'background')" }
+          "text": {
+            "type": "string",
+            "description": "Color role name from `colors` (e.g. 'primary', 'background')"
+          },
+          "bg": {
+            "type": "string",
+            "description": "Color role name from `colors` (e.g. 'primary', 'background')"
+          }
         },
         "additionalProperties": false
       }
@@ -168,9 +205,18 @@
         "required": ["stack"],
         "properties": {
           "stack": { "type": "string", "description": "CSS font stack" },
-          "weight": { "type": "integer", "description": "Font weight, e.g. 400, 700" },
-          "size": { "type": "string", "description": "Base font size, e.g. '1rem', '16px'" },
-          "line_height": { "type": "string", "description": "Line height, e.g. '1.5', '24px'" }
+          "weight": {
+            "type": "integer",
+            "description": "Font weight, e.g. 400, 700"
+          },
+          "size": {
+            "type": "string",
+            "description": "Base font size, e.g. '1rem', '16px'"
+          },
+          "line_height": {
+            "type": "string",
+            "description": "Line height, e.g. '1.5', '24px'"
+          }
         },
         "additionalProperties": false
       }
@@ -183,16 +229,40 @@
         "description": { "type": "string" },
         "logo_style": {
           "type": "string",
-          "enum": ["wordmark", "lettermark", "pictorial", "abstract", "combination"],
+          "enum": [
+            "wordmark",
+            "lettermark",
+            "pictorial",
+            "abstract",
+            "combination"
+          ],
           "description": "Structural type of the logo mark"
         },
         "has_icon_variant": { "type": "boolean" },
-        "color": { "type": "string", "description": "Filename of full-color logo asset" },
-        "white": { "type": "string", "description": "Filename of white/reversed logo asset" },
-        "monogram": { "type": "string", "description": "Monogram character(s) used in compact contexts" },
-        "wordmark": { "type": "string", "description": "Brand name as it appears in the wordmark (text)" },
-        "icon_file": { "type": "string", "description": "Filename of standalone icon/mark asset" },
-        "wordmark_file": { "type": "string", "description": "Filename of wordmark-only logo asset" }
+        "color": {
+          "type": "string",
+          "description": "Filename of full-color logo asset"
+        },
+        "white": {
+          "type": "string",
+          "description": "Filename of white/reversed logo asset"
+        },
+        "monogram": {
+          "type": "string",
+          "description": "Monogram character(s) used in compact contexts"
+        },
+        "wordmark": {
+          "type": "string",
+          "description": "Brand name as it appears in the wordmark (text)"
+        },
+        "icon_file": {
+          "type": "string",
+          "description": "Filename of standalone icon/mark asset"
+        },
+        "wordmark_file": {
+          "type": "string",
+          "description": "Filename of wordmark-only logo asset"
+        }
       },
       "additionalProperties": false
     },

@@ -24,7 +24,7 @@ Two files per brand:
 
 **Agent system prompt** — paste at session start:
 
-```
+```text
 You are working on behalf of [brand.brand].
 Brand voice: [brand.voice.tone joined with commas]. Avoid: [brand.voice.avoid joined with commas].
 Examples of on-brand copy: [brand.voice.examples joined with newlines]
@@ -56,35 +56,35 @@ audience = brand["audience"]["primary"]
 
 ### Required
 
-| Field | Type | Description |
-|-------|------|-------------|
-| `brand` | string | Full brand name |
-| `website` | string | Primary domain (no protocol) |
-| `category` | string | Industry and subcategory, e.g. `"Legal — Family Law"` |
-| `last_updated` | string (date) | ISO 8601 date last reviewed |
-| `positioning` | object | `{ "statement": "..." }` — required. Optional sub-fields: `for`, `category`, `benefit` |
-| `markets` | string[] | Geographic or demographic markets served |
-| `colors` | object | Named color roles — each with `hex` and optional `usage` note |
-| `typography` | object | Named type roles with CSS `stack` and optional `weight`, `size`, `line_height` |
-| `voice` | object | `tone`, `avoid`, and optional `examples` (sample on-brand sentences) |
+| Field          | Type          | Description                                                                            |
+| -------------- | ------------- | -------------------------------------------------------------------------------------- |
+| `brand`        | string        | Full brand name                                                                        |
+| `website`      | string        | Primary domain (no protocol)                                                           |
+| `category`     | string        | Industry and subcategory, e.g. `"Legal — Family Law"`                                  |
+| `last_updated` | string (date) | ISO 8601 date last reviewed                                                            |
+| `positioning`  | object        | `{ "statement": "..." }` — required. Optional sub-fields: `for`, `category`, `benefit` |
+| `markets`      | string[]      | Geographic or demographic markets served                                               |
+| `colors`       | object        | Named color roles — each with `hex` and optional `usage` note                          |
+| `typography`   | object        | Named type roles with CSS `stack` and optional `weight`, `size`, `line_height`         |
+| `voice`        | object        | `tone`, `avoid`, and optional `examples` (sample on-brand sentences)                   |
 
 ### Optional
 
-| Field | Type | Description |
-|-------|------|-------------|
-| `version` | string (semver) | Brand guide version, e.g. `"1.0.0"` |
-| `legal_name` | string | Registered entity name, if different from brand name |
-| `locale` | string | Language/region code, e.g. `"en-US"` |
-| `taglines` | string[] | Brand taglines, priority order |
-| `differentiation` | string | One sentence: what this brand is not or how it differs |
-| `audience` | object | `primary` (who the customer is), `pain_points`, `motivations` |
-| `services` | string[] | Products or services offered |
-| `restrictions` | string[] | Off-limits language or claims (important for regulated industries) |
-| `imagery_style` | string[] | Art direction for photos and visuals |
-| `accessible_pairs` | array | Approved color combinations, referencing color role names |
-| `color_mode` | `"light"` or `"dark"` | Default rendering mode |
-| `logo` | object | `description`, `has_icon_variant`, `color`, `white`, `monogram`, `wordmark`, `icon_file`, `wordmark_file` |
-| `social` | object | Arbitrary key→value pairs, keyed by platform name |
+| Field              | Type                  | Description                                                                                               |
+| ------------------ | --------------------- | --------------------------------------------------------------------------------------------------------- |
+| `version`          | string (semver)       | Brand guide version, e.g. `"1.0.0"`                                                                       |
+| `legal_name`       | string                | Registered entity name, if different from brand name                                                      |
+| `locale`           | string                | Language/region code, e.g. `"en-US"`                                                                      |
+| `taglines`         | string[]              | Brand taglines, priority order                                                                            |
+| `differentiation`  | string                | One sentence: what this brand is not or how it differs                                                    |
+| `audience`         | object                | `primary` (who the customer is), `pain_points`, `motivations`                                             |
+| `services`         | string[]              | Products or services offered                                                                              |
+| `restrictions`     | string[]              | Off-limits language or claims (important for regulated industries)                                        |
+| `imagery_style`    | string[]              | Art direction for photos and visuals                                                                      |
+| `accessible_pairs` | array                 | Approved color combinations, referencing color role names                                                 |
+| `color_mode`       | `"light"` or `"dark"` | Default rendering mode                                                                                    |
+| `logo`             | object                | `description`, `has_icon_variant`, `color`, `white`, `monogram`, `wordmark`, `icon_file`, `wordmark_file` |
+| `social`           | object                | Arbitrary key→value pairs, keyed by platform name                                                         |
 
 ## Validation
 
@@ -96,7 +96,7 @@ npx ajv-cli validate --spec=draft2020 -s schema.json -d brand.json
 
 ## File structure
 
-```
+```text
 your-brand/
   brand.json        # machine-readable (use this with agents)
   brand-guide.md    # human-readable (attach to prompts)

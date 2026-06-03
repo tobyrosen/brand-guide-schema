@@ -6,10 +6,7 @@
   "locale": "en-US",
   "last_updated": "2025-01-01",
   "version": "0.1.0",
-  "taglines": [
-    "Primary tagline",
-    "Secondary tagline (optional)"
-  ],
+  "taglines": ["Primary tagline", "Secondary tagline (optional)"],
   "positioning": {
     "statement": "One or two sentence positioning statement describing what you do and who you serve.",
     "for": "Target audience description",
@@ -17,23 +14,13 @@
     "benefit": "Primary benefit or value delivered"
   },
   "differentiation": "Unlike [alternative], we [key differentiator].",
-  "markets": [
-    "City, State",
-    "Region or demographic"
-  ],
+  "markets": ["City, State", "Region or demographic"],
   "audience": {
     "primary": "One sentence describing who the ideal customer is.",
-    "pain_points": [
-      "What they are trying to solve or escape"
-    ],
-    "motivations": [
-      "What they are trying to achieve or become"
-    ]
+    "pain_points": ["What they are trying to solve or escape"],
+    "motivations": ["What they are trying to achieve or become"]
   },
-  "services": [
-    "Service or product one",
-    "Service or product two"
-  ],
+  "services": ["Service or product one", "Service or product two"],
   "restrictions": [
     "Do not make specific outcome guarantees",
     "Do not reference competitors by name"
@@ -43,8 +30,14 @@
     "Natural light, outdoor or environmental settings"
   ],
   "colors": {
-    "primary": { "hex": "#000000", "usage": "Headlines, primary CTAs, key UI elements" },
-    "accent": { "hex": "#ffffff", "usage": "CTA backgrounds, highlights, contrast elements" },
+    "primary": {
+      "hex": "#000000",
+      "usage": "Headlines, primary CTAs, key UI elements"
+    },
+    "accent": {
+      "hex": "#ffffff",
+      "usage": "CTA backgrounds, highlights, contrast elements"
+    },
     "background": { "hex": "#f5f5f5", "usage": "Page and section backgrounds" }
   },
   "accessible_pairs": [
