@@ -80,7 +80,8 @@ repos:
     rev: v4.0.0-alpha.8
     hooks:
       - id: prettier
-        types_or: [javascript, jsx, ts, tsx, json, css, scss, markdown, yaml, html]
+        types_or:
+          [javascript, jsx, ts, tsx, json, css, scss, markdown, yaml, html]
         additional_dependencies:
           - prettier@3.4.2
           - prettier-plugin-astro@0.14.1
