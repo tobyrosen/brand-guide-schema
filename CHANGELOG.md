@@ -3,6 +3,7 @@
 ## [Unreleased]
 
 ### Added
+
 - `voice.examples` — sample on-brand sentences for copy agents
 - `audience` — primary persona, pain_points, motivations
 - `differentiation` — one-sentence brand differentiator
@@ -15,6 +16,7 @@
 - `$id` URI for external schema referencing
 
 ### Changed
+
 - `colors` restructured: each role is now `{ hex, usage }` instead of a plain hex string
 - `colors` now requires `primary` and `background` roles
 - `positioning` restructured: now an object with `statement`, `for`, `category`, `benefit`
@@ -24,9 +26,10 @@
 - `ajv-cli` validation command updated to include `--spec=draft2020`
 
 ### Removed
+
 - `contact` block — not a brand concern; belongs in CRM or site config
 - `typography.family` — removed in favor of `stack` only (eliminates drift risk)
 
 ---
 
-*Format: [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). Versioning: [Semantic Versioning](https://semver.org/).*
+_Format: [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). Versioning: [Semantic Versioning](https://semver.org/)._

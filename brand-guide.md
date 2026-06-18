@@ -14,6 +14,7 @@
 **Full name:** Your Brand Name
 
 **Taglines:**
+
 - "Primary tagline"
 - "Secondary tagline (optional)"
 
@@ -27,6 +28,7 @@
 **Markets:** City, State; Region or demographic
 
 **Services:**
+
 - Service or product one
 - Service or product two
 
@@ -37,9 +39,11 @@
 **Primary:** One sentence describing who the ideal customer is.
 
 **Pain points:**
+
 - What they are trying to solve or escape
 
 **Motivations:**
+
 - What they are trying to achieve or become
 
 ---
@@ -47,6 +51,7 @@
 ## Restrictions
 
 Do not use:
+
 - Do not make specific outcome guarantees
 - Do not reference competitors by name
 
@@ -63,11 +68,11 @@ Do not use:
 
 **Color mode:** light
 
-| Role | Hex | Usage |
-|------|-----|-------|
-| Primary | `#000000` | Headlines, primary CTAs, key UI elements |
-| Accent | `#ffffff` | CTA backgrounds, highlights, contrast elements |
-| Background | `#f5f5f5` | Page and section backgrounds |
+| Role       | Hex       | Usage                                          |
+| ---------- | --------- | ---------------------------------------------- |
+| Primary    | `#000000` | Headlines, primary CTAs, key UI elements       |
+| Accent     | `#ffffff` | CTA backgrounds, highlights, contrast elements |
+| Background | `#f5f5f5` | Page and section backgrounds                   |
 
 **Accessible pairs:** accent on primary, primary on background
 
@@ -75,10 +80,10 @@ Do not use:
 
 ## Typography
 
-| Role | Stack | Weight | Size | Line Height |
-|------|-------|--------|------|-------------|
-| Headings | `"Font Name", sans-serif` | 700 | 2rem | 1.2 |
-| Body | `"Font Name", serif` | 400 | 1rem | 1.6 |
+| Role     | Stack                     | Weight | Size | Line Height |
+| -------- | ------------------------- | ------ | ---- | ----------- |
+| Headings | `"Font Name", sans-serif` | 700    | 2rem | 1.2         |
+| Body     | `"Font Name", serif`      | 400    | 1rem | 1.6         |
 
 ---
 
@@ -103,6 +108,7 @@ Do not use:
 **Avoid:** adjective, adjective
 
 **Examples:**
+
 - "Sample sentence that exemplifies the brand voice."
 - "Another example showing how the brand speaks to its audience."
 
